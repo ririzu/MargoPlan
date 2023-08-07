@@ -1,0 +1,198 @@
+.registerForm--container {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+/*FORM INPUT*/
+.input--container {
+  width: 100%;
+  /* height: 40rem; */
+  display: inline-grid;
+  grid-template-columns: repeat(2, 0.25fr);
+  gap: 6rem;
+  align-content: center;
+  justify-content: center;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+}
+
+.text-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 22px;
+  color: #000000;
+}
+
+/*Teksten inn i inputtet*/
+/* input {
+  text-align: center;
+  text-justify: center;
+  font-weight: 100;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+} */
+
+input::placeholder {
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+/*Classe: Input field design*/
+.input--field {
+  position: relative;
+  width: 22rem;
+  /* height: 4rem; */
+  border: none;
+  border-bottom: 3px solid #8DC8DF;
+  box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0C0B0B;
+}
+
+
+/******************************************************************/
+/*BOTTOM PART*/
+.bottom--container {
+  display: inline-grid;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 0;
+  padding-left: 23%;
+}
+
+
+
+/* 'a' Texts/links*/
+a {
+  color: rgb(3, 26, 35);
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+a:hover {
+  font-size: 1.5rem;
+}
+
+.register--button {
+  width: 22rem;
+  height: 4rem;
+  background-color: rgba(166, 218, 239, 1);
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.3);
+  border: 0rem;
+  font-size: 1.75rem;
+  line-height: 1.8rem;
+  cursor: pointer;
+}
+
+.register--button:hover {
+  background-color: #66A2BA;
+  color: white;
+}
+
+
+/*FOCUS*/
+.input--field:focus {
+  outline: none;
+}
+
+input:focus::placeholder {
+  color: rgba(61, 61, 61, 0.835);
+}
+
+.Login-form-field-error-meesage {
+  margin-top: 3%;
+  font-size: 15px;
+  color: rgb(216, 0, 0);
+  font-family: 'Inter';
+  font-style: normal;
+}
+
+.text-success {
+  color: rgb(0, 121, 14);
+  font-family: 'Inter';
+  font-style: normal;
+}
+
+.chekbox {
+  width: 26px;
+  height: 23px;
+  background: #EBFAFF;
+  cursor: pointer;
+}
+
+.agreement-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 20px
+}
+
+.agreement-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.existing--account {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+/*******************************************************************/
+/*Endre størrelse dersom skjermen er mindre enn:*/
+@media screen and (max-width: 768px) {
+  .input--container {
+    display: inline-grid;
+    grid-template-columns: repeat(1, 0.25fr);
+    gap: 2rem;
+    width: 100%;
+    height: 36rem;
+  }
+
+  input {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  input::placeholder {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .input--field {
+    position: relative;
+    width: 16rem;
+    height: 2.8rem;
+  }
+
+  .register--button {
+    width: 16rem;
+    height: 2.8rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+}

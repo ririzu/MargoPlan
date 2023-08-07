@@ -1,0 +1,156 @@
+.navbar {
+    position: sticky;
+    background-color: #66A2BA;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoContainer,.logoContainer2,.user-Info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoContainer2{
+    visibility: hidden ;
+}
+
+.user-Info{
+    gap: 10px;
+    margin-right: 6rem;
+}
+
+.margo-logo {
+    /* margin-top: 0.5rem;*/
+    margin-left: 1.5rem;
+    height: 70px;
+    width: 70px;
+}
+
+.margo-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.user-company{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.user-name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.menubar-container {
+    height: 50px;
+    margin-top: 10px;
+    padding-left: 50px;
+}
+
+.menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: black;
+}
+
+.menu-bar-icon {
+    margin-left: -50px;
+    margin-top: 8px;
+}
+
+.nav-menu {
+    background-color: #A0B9C7;
+    width: 18rem;
+    margin-top: 0.25rem;
+    height: 100%;
+    margin-bottom: 0rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    transition: 850ms;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+    z-index: 1;
+}
+
+.nav-menu.active {
+    left: 0;
+    transition: 350ms;
+    height: 100%;
+    z-index: 1;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px 0px 0px;
+    list-style: none;
+    height: 60px;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 4px;
+}
+
+.nav-menu-item {
+    width: 100%;
+}
+
+.nav-text a:hover {
+    background-color: #b4cddd;
+}
+
+.nav-menu-items {
+    width: 100%;
+}
+
+.navbar-toggle {
+    background-color: #A0B9C7;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+span {
+    margin-left: 16px;
+}
+
+.searchIcon{
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        width: 12rem;
+    }
+}
